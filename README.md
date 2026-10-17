@@ -1,25 +1,36 @@
-# Pets workshop 
+# Editor de Planilha Simples (Windows)
 
-This repository contains the project for three guided workshops to explore various GitHub features. The project is a website for a fictional dog shelter, with a [Flask](https://flask.palletsprojects.com/en/stable/) backend using [SQLAlchemy](https://www.sqlalchemy.org/) and an [Astro](https://astro.build/) frontend using [Tailwind CSS](https://tailwindcss.com/).
+Resumo
+Este é um pequeno aplicativo desktop em Python (PySimpleGUI) que permite abrir um arquivo Excel (.xlsx) ou CSV, visualizar e editar linhas, adicionar/remover linhas, filtrar por texto e salvar de volta (com backup automático).
 
-The available workshops are:
+Pré-requisitos
+- Windows
+- Python 3.10+ (somente se você quiser rodar sem o .exe)
+- pip
 
-- **[One hour](./content/1-hour/README.md)** — focused on GitHub Copilot
-- **[Full-day](./content/full-day/README.md)** — a full day-in-the-life of a developer using GitHub for their DevOps processes
-- **[GitHub Actions](./content/github-actions/README.md)** — CI/CD pipelines from running tests to deploying to Azure
+Instalação rápida
+1. Crie uma pasta.
+2. Salve os arquivos `main.py`, `requirements.txt` e `build_exe.bat`.
+3. Abra o terminal nessa pasta.
+4. Rode:
+   pip install -r requirements.txt
 
-## Getting started
+Executar
+python main.py
 
-> **[Get started learning about development with GitHub!](./content/README.md)**
+Gerar executável
+pip install pyinstaller
+build_exe.bat
 
-## License 
+O executável será gerado em:
+dist\EditorPlanilha.exe
 
-This project is licensed under the terms of the MIT open source license. Please refer to the [LICENSE](./LICENSE) for the full terms.
-
-## Maintainers 
-
-You can find the list of maintainers in [CODEOWNERS](./.github/CODEOWNERS).
-
-## Support
-
-This project is provided as-is, and may be updated over time. If you have questions, please open an issue.
+Funcionalidades
+- Abrir arquivo .xlsx/.csv
+- Navegar por abas
+- Editar linha
+- Adicionar linha
+- Excluir linha
+- Filtrar por texto
+- Salvar e salvar como
+- Backup automático antes de sobrescrever
